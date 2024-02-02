@@ -5,6 +5,41 @@
 
 An open-source lyrics plugin for [foobar2000](https://www.foobar2000.org/) that includes its own UI panel for displaying and sources for downloading lyrics that are not available locally. It is intended to be a replacement for LyricShowPanel3 so it is fully-featured and supports lyric searching, saving and editing directly from within foobar2000.
 
+## 1.9 Nightly Changelog (commits from https://github.com/ditstyle-yang/foo_openlyrics)
+(commit ids: https://github.com/jacquesh/foo_openlyrics/compare/master...ditstyle-yang:foo_openlyrics:master)
+
+*  Add an option to only save unsynced lyrics (Commit: e17156b)
+
+*  Auto-search can now find lyrics when the source provides no album (Commit: fc75d79)
+
+*  Fix lyrics being re-saved when loaded from another local source (Commit: e853244)
+
+*  Automatically highlight the first manual search result (Commit: 2a6aa71)
+
+*  Fix lyrics not saving to tags if there was already a lyric tag (Commit: 9100fa6)
+
+*  Manual searches now query sources in parallel (Commit: 0f815b9)
+
+*  Update version number for v0.9 release (Commit: 4623d0b)
+
+*  Bump the version number post-release of v0.9 (Commit: 108f0a2)
+
+*  Fix ColumnsUI config export complaints of corrupted file (Commit: 783662a)
+
+*  Make auto-searches case-insensitive when matching track metadata (Commit: 0d3845a)
+
+*  Support applying a manual search result by double-clicking it (Commit: de1062c)
+
+*  Allow sorting the manual search result list by any column (Commit: 2780a1b)
+
+*  Allow applying lyrics from manual search without closing the dialog (Commit: f612289)
+
+*  Remember modified column widths in the manual search table UI (Commit: edc6f2b)
+
+* Add a bulk search option to the playlist context menu (Commit: d3c8bf5)
+
+* Avoid auto-searching a track after a while if it keeps failing (Commit: 5af74f7)
+
 ## Features
 * Buttery-smooth lyric scrolling (either horizontally or vertically)
 * Supports retrieving lyrics from local files, ID3 tags or the internet
